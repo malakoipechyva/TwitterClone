@@ -13,6 +13,10 @@
 		E3D8B12B25B609DB00642412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D8B12A25B609DB00642412 /* Assets.xcassets */; };
 		E3D8B12E25B609DB00642412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D8B12C25B609DB00642412 /* LaunchScreen.storyboard */; };
 		E3D8B14325B6E95100642412 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8B14225B6E95100642412 /* MainTabController.swift */; };
+		E3D8B14625B886E600642412 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8B14525B886E600642412 /* FeedController.swift */; };
+		E3D8B14925B8896600642412 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8B14825B8896600642412 /* ExploreController.swift */; };
+		E3D8B14C25B889BA00642412 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8B14B25B889BA00642412 /* NotificationsController.swift */; };
+		E3D8B14F25B88A0200642412 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8B14E25B88A0200642412 /* ConversationsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E3D8B12D25B609DB00642412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3D8B12F25B609DB00642412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3D8B14225B6E95100642412 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		E3D8B14525B886E600642412 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		E3D8B14825B8896600642412 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		E3D8B14B25B889BA00642412 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		E3D8B14E25B88A0200642412 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				E3D8B14225B6E95100642412 /* MainTabController.swift */,
+				E3D8B14525B886E600642412 /* FeedController.swift */,
+				E3D8B14825B8896600642412 /* ExploreController.swift */,
+				E3D8B14B25B889BA00642412 /* NotificationsController.swift */,
+				E3D8B14E25B88A0200642412 /* ConversationsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D8B14C25B889BA00642412 /* NotificationsController.swift in Sources */,
+				E3D8B14F25B88A0200642412 /* ConversationsController.swift in Sources */,
 				E3D8B12225B609D600642412 /* AppDelegate.swift in Sources */,
+				E3D8B14925B8896600642412 /* ExploreController.swift in Sources */,
 				E3D8B12425B609D600642412 /* SceneDelegate.swift in Sources */,
 				E3D8B14325B6E95100642412 /* MainTabController.swift in Sources */,
+				E3D8B14625B886E600642412 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
