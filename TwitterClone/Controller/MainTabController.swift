@@ -11,6 +11,8 @@ class MainTabController: UITabBarController {
 
   //MARK: - Properties
   
+  
+  
   //MARK: - Lifecycle
   
     override func viewDidLoad() {
@@ -20,9 +22,12 @@ class MainTabController: UITabBarController {
       
       configureViewControllers()
 
+
     }
   
   //MARK: - Helpers
+  
+
   
   func configureViewControllers() {
     
