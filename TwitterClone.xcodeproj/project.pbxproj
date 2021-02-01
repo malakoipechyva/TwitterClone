@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		E3D8B15A25BEC50600642412 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8B15925BEC50600642412 /* LoginController.swift */; };
 		E3D8B15E25BECD3500642412 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8B15D25BECD3500642412 /* RegistrationController.swift */; };
 		E3ED489425C2EA1C005C4F9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3ED489325C2EA1C005C4F9D /* GoogleService-Info.plist */; };
+		E3ED48A925C7F8E4005C4F9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48A825C7F8E4005C4F9D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E3D8B15925BEC50600642412 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E3D8B15D25BECD3500642412 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		E3ED489325C2EA1C005C4F9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3ED48A825C7F8E4005C4F9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +76,6 @@
 				C7C781C432329AF390AC8EA0 /* Pods-TwitterClone.debug.xcconfig */,
 				0927CD5C3AD3E83FF22A1DB0 /* Pods-TwitterClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -162,6 +163,7 @@
 			children = (
 				E3D8B15125BEB36A00642412 /* Extensions.swift */,
 				E39522FF25C00A7B009176C4 /* Utilities.swift */,
+				E3ED48A825C7F8E4005C4F9D /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -301,6 +303,7 @@
 				E3D8B14325B6E95100642412 /* MainTabController.swift in Sources */,
 				E3D8B15E25BECD3500642412 /* RegistrationController.swift in Sources */,
 				E3D8B14625B886E600642412 /* FeedController.swift in Sources */,
+				E3ED48A925C7F8E4005C4F9D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
