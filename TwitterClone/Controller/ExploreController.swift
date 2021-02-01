@@ -8,23 +8,23 @@
 import UIKit
 
 class ExploreController: UIViewController {
-  
-  //MARK: - Properties
-  
-  //MARK: - Lifecycle
-  
+    
+    //MARK: - Properties
+    
+    //MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-      configureUI()
-
+        
+        configureUI()
+        
     }
-  
-  //MARK: - Helpers
-  
-  func configureUI() {
-    view.backgroundColor = .white
     
-    navigationItem.title = "Explore"
-  }
+    //MARK: - Helpers
+    
+    func configureUI() {
+        view.backgroundColor = .white
+        
+        navigationItem.title = "Explore"
+    }
 }
