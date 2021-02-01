@@ -24,6 +24,7 @@
 		E3D8B15E25BECD3500642412 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D8B15D25BECD3500642412 /* RegistrationController.swift */; };
 		E3ED489425C2EA1C005C4F9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3ED489325C2EA1C005C4F9D /* GoogleService-Info.plist */; };
 		E3ED48A925C7F8E4005C4F9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48A825C7F8E4005C4F9D /* Constants.swift */; };
+		E3ED48BC25C8101F005C4F9D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48BB25C8101F005C4F9D /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E3D8B15D25BECD3500642412 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		E3ED489325C2EA1C005C4F9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3ED48A825C7F8E4005C4F9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E3ED48BB25C8101F005C4F9D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		E3D8B13625B6E73D00642412 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				E3ED48BB25C8101F005C4F9D /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				E3D8B12225B609D600642412 /* AppDelegate.swift in Sources */,
 				E3D8B15225BEB36A00642412 /* Extensions.swift in Sources */,
 				E3D8B15A25BEC50600642412 /* LoginController.swift in Sources */,
+				E3ED48BC25C8101F005C4F9D /* AuthService.swift in Sources */,
 				E3D8B14925B8896600642412 /* ExploreController.swift in Sources */,
 				E3D8B12425B609D600642412 /* SceneDelegate.swift in Sources */,
 				E3D8B14325B6E95100642412 /* MainTabController.swift in Sources */,
