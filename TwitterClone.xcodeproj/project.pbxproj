@@ -26,6 +26,7 @@
 		E3ED48A925C7F8E4005C4F9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48A825C7F8E4005C4F9D /* Constants.swift */; };
 		E3ED48BC25C8101F005C4F9D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48BB25C8101F005C4F9D /* AuthService.swift */; };
 		E3ED48D125C87514005C4F9D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48D025C87514005C4F9D /* UserService.swift */; };
+		E3ED48D425C9945C005C4F9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48D325C9945C005C4F9D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		E3ED48A825C7F8E4005C4F9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E3ED48BB25C8101F005C4F9D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E3ED48D025C87514005C4F9D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E3ED48D325C9945C005C4F9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		E3D8B13D25B6E75D00642412 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E3ED48D325C9945C005C4F9D /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				E3D8B15225BEB36A00642412 /* Extensions.swift in Sources */,
 				E3D8B15A25BEC50600642412 /* LoginController.swift in Sources */,
 				E3ED48BC25C8101F005C4F9D /* AuthService.swift in Sources */,
+				E3ED48D425C9945C005C4F9D /* User.swift in Sources */,
 				E3D8B14925B8896600642412 /* ExploreController.swift in Sources */,
 				E3D8B12425B609D600642412 /* SceneDelegate.swift in Sources */,
 				E3D8B14325B6E95100642412 /* MainTabController.swift in Sources */,
