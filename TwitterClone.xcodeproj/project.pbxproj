@@ -25,6 +25,7 @@
 		E3ED489425C2EA1C005C4F9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3ED489325C2EA1C005C4F9D /* GoogleService-Info.plist */; };
 		E3ED48A925C7F8E4005C4F9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48A825C7F8E4005C4F9D /* Constants.swift */; };
 		E3ED48BC25C8101F005C4F9D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48BB25C8101F005C4F9D /* AuthService.swift */; };
+		E3ED48D125C87514005C4F9D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48D025C87514005C4F9D /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E3ED489325C2EA1C005C4F9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E3ED48A825C7F8E4005C4F9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E3ED48BB25C8101F005C4F9D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E3ED48D025C87514005C4F9D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				E3ED48BB25C8101F005C4F9D /* AuthService.swift */,
+				E3ED48D025C87514005C4F9D /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3ED48D125C87514005C4F9D /* UserService.swift in Sources */,
 				E3D8B14C25B889BA00642412 /* NotificationsController.swift in Sources */,
 				E3D8B14F25B88A0200642412 /* ConversationsController.swift in Sources */,
 				E395230025C00A7B009176C4 /* Utilities.swift in Sources */,
