@@ -30,7 +30,7 @@ class UploadTweetController: UIViewController {
     }()
     
     private let profileImageView: UIImageView = {
-       let iv = UIImageView()
+        let iv = UIImageView()
         iv.backgroundColor = .twitterBlue
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
@@ -38,6 +38,8 @@ class UploadTweetController: UIViewController {
         iv.layer.cornerRadius = 42 / 2
         return iv
     }()
+    
+    private let captionTextView = CaptionTextView()
     
     //MARK: - Lifecycle
     
@@ -63,7 +65,7 @@ class UploadTweetController: UIViewController {
     }
     
     @objc func handleUploadTweet() {
-    print("DEBUG: handle upload...")
+        print("DEBUG: handle upload...")
     }
     
     
@@ -75,9 +77,13 @@ class UploadTweetController: UIViewController {
         view.backgroundColor = .white
         configureNavigationBar()
         
-        view.addSubview(profileImageView)
-        profileImageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor,
-                                paddingTop: 16, paddingLeft: 16)
+        let stack = UIStackView(arrangedSubviews: [profileImageView, captionTextView])
+        stack.axis = .horizontal
+        stack.spacing = 12
+        
+        view.addSubview(stack)
+        stack.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, right: view.rightAnchor,
+                                paddingTop: 16, paddingLeft: 16, paddingRight: 16)
         profileImageView.sd_setImage(with: user.profileImageUrl, completed: nil)
     }
     
