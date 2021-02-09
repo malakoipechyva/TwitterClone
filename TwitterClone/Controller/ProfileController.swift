@@ -23,13 +23,14 @@ class ProfileController: UICollectionViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.navigationBar.barStyle = .black
         navigationController?.navigationBar.isHidden = true
     }
     
     //MARK: - Helpers
     
     func configureCollectionView() {
-        collectionView.backgroundColor = .red
+        collectionView.backgroundColor = .white
         collectionView.contentInsetAdjustmentBehavior = .never
         
         collectionView.register(TweetCell.self, forCellWithReuseIdentifier: reuseIdentifier)
