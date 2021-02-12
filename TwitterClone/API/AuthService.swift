@@ -29,7 +29,7 @@ struct AuthService {
         
         let email = credentials.email
         let password = credentials.password
-        let fullname = credentials.password
+        let fullname = credentials.fullname
         let username = credentials.username
         
         guard let imageData = credentials.profileImage.jpegData(compressionQuality: 0.3) else { return }
