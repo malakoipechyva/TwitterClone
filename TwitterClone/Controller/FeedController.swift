@@ -101,6 +101,7 @@ extension FeedController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: view.frame.width, height: 120)
     }
 }
+
 //MARK: - TweetCellDelegate
 
 extension FeedController: TweetCellDelegate {
