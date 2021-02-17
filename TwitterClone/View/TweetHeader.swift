@@ -80,8 +80,6 @@ class TweetHeader: UICollectionReusableView {
         return label
     }()
     
-    
-    
     private lazy var statsView: UIView = {
         let view = UIView()
         
@@ -106,6 +104,30 @@ class TweetHeader: UICollectionReusableView {
                         paddingLeft: 8, height: 1.0)
         
         return view
+    }()
+    
+    private lazy var commentButton: UIButton = {
+        let button = createButton(withImageName: "comment")
+        button.addTarget(self, action: #selector(handleCommentTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var retweetButton: UIButton = {
+        let button = createButton(withImageName: "retweet")
+        button.addTarget(self, action: #selector(handleRetweetTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var likeButton: UIButton = {
+        let button = createButton(withImageName: "like")
+        button.addTarget(self, action: #selector(handleLikeTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var shareButton: UIButton = {
+        let button = createButton(withImageName: "share")
+        button.addTarget(self, action: #selector(handleShareTapped), for: .touchUpInside)
+        return button
     }()
     
     //MARK: - Lifecycle
@@ -136,6 +158,13 @@ class TweetHeader: UICollectionReusableView {
         addSubview(statsView)
         statsView.anchor(top: dateLabel.bottomAnchor, left: leftAnchor, right: rightAnchor,
                          paddingTop: 20, height: 40)
+        
+        let actionStack = UIStackView(arrangedSubviews: [commentButton, retweetButton, likeButton, shareButton])
+        actionStack.spacing = 72
+        
+        addSubview(actionStack)
+        actionStack.centerX(inView: self)
+        actionStack.anchor(bottom: bottomAnchor, paddingBottom: 12)
     }
     
     required init?(coder: NSCoder) {
@@ -152,8 +181,29 @@ class TweetHeader: UICollectionReusableView {
         print("DEBUG: Handle show action sheet...")
     }
     
-    //MARK: - API
+    @objc func handleCommentTapped() {
+        print("DEBUG: Handle comment...")
+    }
+    
+    @objc func handleRetweetTapped() {
+        print("DEBUG: Handle retweett...")
+    }
+    
+    @objc func handleLikeTapped() {
+        print("DEBUG: Handle like...")
+    }
+    
+    @objc func handleShareTapped() {
+        print("DEBUG: Handle share...")
+    }
     
     //MARK: - Helpers
     
+    func createButton(withImageName imageName: String) -> UIButton {
+        let button = UIButton(type: .system)
+        button.tintColor = .darkGray
+        button.setImage(UIImage(named: imageName), for: .normal)
+        button.setDimensions(width: 20, height: 20)
+        return button
+    }
 }
