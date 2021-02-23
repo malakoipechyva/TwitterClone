@@ -11,6 +11,12 @@ class ActionSheetCell: UITableViewCell {
     
     //MARK: - Properties
     
+    var option: ActionSheetOptions? {
+        didSet {
+            configure()
+        }
+    }
+    
     private lazy var optionImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
@@ -48,8 +54,10 @@ class ActionSheetCell: UITableViewCell {
     
     //MARK: - Selectors
     
-    //MARK: - API
     
     //MARK: - Helpers
     
+    func configure() {
+        titleLabel.text = option?.description
+    }
 }
