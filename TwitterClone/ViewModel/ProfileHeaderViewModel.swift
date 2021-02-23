@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum ProfileFiletrOptions: Int, CaseIterable {
+enum ProfileFilterOptions: Int, CaseIterable {
     case tweets
     case replies
     case likes

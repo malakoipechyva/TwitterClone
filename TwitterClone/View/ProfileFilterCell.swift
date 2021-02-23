@@ -10,7 +10,7 @@ class ProfileFilterCell: UICollectionViewCell {
     
     //MARK: - Properties
     
-    var option: ProfileFiletrOptions! {
+    var option: ProfileFilterOptions! {
         didSet {
             titleLabel.text = option.description
         }
