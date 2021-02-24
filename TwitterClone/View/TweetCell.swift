@@ -10,6 +10,7 @@ import UIKit
 protocol TweetCellDelegate: class {
     func handleProfileImageTapped(_ cell: TweetCell)
     func handleReplyTapped(_ cell: TweetCell)
+    func handleLikeTapped(_ cell: TweetCell)
 }
 
 class TweetCell: UICollectionViewCell {
@@ -61,7 +62,7 @@ class TweetCell: UICollectionViewCell {
         button.setImage(UIImage(named: "retweet"), for: .normal)
         button.tintColor = .darkGray
         button.setDimensions(width: 20, height: 20)
-        button.addTarget(self, action: #selector(retweetButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleRetweetButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -70,7 +71,7 @@ class TweetCell: UICollectionViewCell {
         button.setImage(UIImage(named: "like"), for: .normal)
         button.tintColor = .darkGray
         button.setDimensions(width: 20, height: 20)
-        button.addTarget(self, action: #selector(likeButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleLikeButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -79,7 +80,7 @@ class TweetCell: UICollectionViewCell {
         button.setImage(UIImage(named: "share"), for: .normal)
         button.tintColor = .darkGray
         button.setDimensions(width: 20, height: 20)
-        button.addTarget(self, action: #selector(shareButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleShareButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -136,15 +137,15 @@ class TweetCell: UICollectionViewCell {
         delegate?.handleReplyTapped(self)
     }
     
-    @objc func retweetButtonTapped() {
+    @objc func handleRetweetButtonTapped() {
         
     }
     
-    @objc func likeButtonTapped() {
-        
+    @objc func handleLikeButtonTapped() {
+        delegate?.handleLikeTapped(self)
     }
     
-    @objc func shareButtonTapped() {
+    @objc func handleShareButtonTapped() {
         
     }
     
