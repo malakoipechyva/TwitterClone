@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let reuseIdentidier = "UserCell"
+private let reuseIdentifier = "UserCell"
 
 class ExploreController: UITableViewController {
     
@@ -61,7 +61,7 @@ class ExploreController: UITableViewController {
         view.backgroundColor = .white
         navigationItem.title = "Explore"
         
-        tableView.register(UserCell.self, forCellReuseIdentifier: reuseIdentidier)
+        tableView.register(UserCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.rowHeight = 60
         tableView.separatorStyle = .none
     }
@@ -84,7 +84,7 @@ extension ExploreController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentidier, for: indexPath) as! UserCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! UserCell
         let user = inSearchMode ? filteredUsers[indexPath.row] : users[indexPath.row]
         cell.user = user
         return cell

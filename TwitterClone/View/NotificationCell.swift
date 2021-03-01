@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol NotificationCellDelegate: class {
+    func didTapProfileImage(_ cell: NotificationCell)
+}
+
 class NotificationCell: UITableViewCell {
     
     //MARK: - Properties
@@ -16,6 +20,8 @@ class NotificationCell: UITableViewCell {
             configure()
         }
     }
+    
+    weak var delegate: NotificationCellDelegate?
     
     private lazy var profileImageView: UIImageView = {
         let iv = UIImageView()
@@ -37,6 +43,7 @@ class NotificationCell: UITableViewCell {
         label.numberOfLines = 2
         label.font = UIFont.systemFont(ofSize: 14)
         label.text = "Test notification"
+        label.backgroundColor = .white
         return label
     }()
     
@@ -61,7 +68,8 @@ class NotificationCell: UITableViewCell {
     //MARK: - Selectors
     
     @objc func handleProfileImageTapped() {
-        
+        print("Go to user profile.....")
+        delegate?.didTapProfileImage(self)
     }
     
     //MARK: - API
