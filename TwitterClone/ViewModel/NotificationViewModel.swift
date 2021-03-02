@@ -8,6 +8,7 @@
 import UIKit
 
 struct NotificationViewModel {
+    
     private let notification: Notification
     private let type: NotificationType
     private let user: User
@@ -45,6 +46,14 @@ struct NotificationViewModel {
     
     var profileImageUrl: URL? {
         return user.profileImageUrl
+    }
+    
+    var shouldHideFollowButton: Bool {
+        return type != .follow
+    }
+    
+    var followButtonText: String {
+        return user.isFollowed ? "Following" : "Follow"
     }
     
     init(notification: Notification) {
