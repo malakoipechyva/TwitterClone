@@ -32,19 +32,33 @@ class NotificationsController: UITableViewController {
         navigationController?.navigationBar.barStyle = .default
         navigationController?.navigationBar.isHidden = false
     }
+    
+    //MARK: - Selectors
+    
+    @objc func handleRefresh() {
+        print("DEBUG: try to refresh....")
+        fetchNotifications()
+    }
+    
     //MARK: - API
     
     func fetchNotifications() {
+        refreshControl?.beginRefreshing()
+        
         NotificationService.shared.fetchNotifications { notifications in
+            self.refreshControl?.endRefreshing()
             self.notifications = notifications
-            
-            for (index, notification) in notifications.enumerated() {
-                if case .follow = notification.type {
-                    let user = notification.user
-                    
-                    UserService.shared.checkIfUserIsFollowed(uid: user.uid) { isFollowed in
-                        self.notifications[index].user.isFollowed = isFollowed
-                    }
+            self.checkIfUserIsFollowed(notification: notifications)
+        }
+    }
+    
+    func checkIfUserIsFollowed(notification: [Notification]) {
+        for (index, notification) in notifications.enumerated() {
+            if case .follow = notification.type {
+                let user = notification.user
+                
+                UserService.shared.checkIfUserIsFollowed(uid: user.uid) { isFollowed in
+                    self.notifications[index].user.isFollowed = isFollowed
                 }
             }
         }
@@ -59,6 +73,10 @@ class NotificationsController: UITableViewController {
         tableView.register(NotificationCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.rowHeight = 60
         tableView.separatorStyle = .none
+        
+        let refreshControl = UIRefreshControl()
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
     }
 }
 
