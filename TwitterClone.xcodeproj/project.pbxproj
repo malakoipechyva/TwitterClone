@@ -50,6 +50,7 @@
 		E3ED48D125C87514005C4F9D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48D025C87514005C4F9D /* UserService.swift */; };
 		E3ED48D425C9945C005C4F9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48D325C9945C005C4F9D /* User.swift */; };
 		E3F5964925F7CAA100086BF3 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5964825F7CAA100086BF3 /* EditProfileController.swift */; };
+		E3F5964D25F7D4A800086BF3 /* EditProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5964C25F7D4A800086BF3 /* EditProfileHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		E3ED48D025C87514005C4F9D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E3ED48D325C9945C005C4F9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E3F5964825F7CAA100086BF3 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		E3F5964C25F7D4A800086BF3 /* EditProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,11 +214,9 @@
 		E3D8B13C25B6E75C00642412 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3F5964B25F7D47400086BF3 /* Profile */,
 				E3A73ED425CAFE53009687E4 /* CaptionTextView.swift */,
 				E3A73EE125CC4923009687E4 /* TweetCell.swift */,
-				E3C6028D25D2B73B00A821E3 /* ProfileHeader.swift */,
-				E3C6029025D2EEBC00A821E3 /* ProfileFilterView.swift */,
-				E3C6029325D2F21700A821E3 /* ProfileFilterCell.swift */,
 				E364CC8F25D6DA5A00F940A2 /* UserCell.swift */,
 				E364CC9925DCF99200F940A2 /* TweetHeader.swift */,
 				E3A3D57C25E4DB9300E91A6A /* ActionSheetCell.swift */,
@@ -253,6 +253,17 @@
 				E3D8B15D25BECD3500642412 /* RegistrationController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E3F5964B25F7D47400086BF3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E3C6028D25D2B73B00A821E3 /* ProfileHeader.swift */,
+				E3C6029025D2EEBC00A821E3 /* ProfileFilterView.swift */,
+				E3C6029325D2F21700A821E3 /* ProfileFilterCell.swift */,
+				E3F5964C25F7D4A800086BF3 /* EditProfileHeader.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +404,7 @@
 				E3C6029725D3D6EB00A821E3 /* ProfileHeaderViewModel.swift in Sources */,
 				E3A73ED225CAD888009687E4 /* UploadTweetController.swift in Sources */,
 				E3ED48D425C9945C005C4F9D /* User.swift in Sources */,
+				E3F5964D25F7D4A800086BF3 /* EditProfileHeader.swift in Sources */,
 				E3D8B14925B8896600642412 /* ExploreController.swift in Sources */,
 				E3D8B12425B609D600642412 /* SceneDelegate.swift in Sources */,
 				E3174E1325E8150A008C9608 /* NotificationService.swift in Sources */,
