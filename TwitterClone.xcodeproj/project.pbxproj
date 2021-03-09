@@ -51,6 +51,8 @@
 		E3ED48D425C9945C005C4F9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48D325C9945C005C4F9D /* User.swift */; };
 		E3F5964925F7CAA100086BF3 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5964825F7CAA100086BF3 /* EditProfileController.swift */; };
 		E3F5964D25F7D4A800086BF3 /* EditProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5964C25F7D4A800086BF3 /* EditProfileHeader.swift */; };
+		E3F5965025F7E25D00086BF3 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5964F25F7E25D00086BF3 /* EditProfileViewModel.swift */; };
+		E3F5965325F7E34E00086BF3 /* EditProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5965225F7E34E00086BF3 /* EditProfileCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,8 @@
 		E3ED48D325C9945C005C4F9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E3F5964825F7CAA100086BF3 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		E3F5964C25F7D4A800086BF3 /* EditProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileHeader.swift; sourceTree = "<group>"; };
+		E3F5964F25F7E25D00086BF3 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		E3F5965225F7E34E00086BF3 /* EditProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +211,7 @@
 				E364CC9C25DFF0F600F940A2 /* UploadTweetViewModel.swift */,
 				E3A3D58325E4E4AC00E91A6A /* ActionSheetViewModel.swift */,
 				E3174E1825E8F447008C9608 /* NotificationViewModel.swift */,
+				E3F5964F25F7E25D00086BF3 /* EditProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				E3C6029025D2EEBC00A821E3 /* ProfileFilterView.swift */,
 				E3C6029325D2F21700A821E3 /* ProfileFilterCell.swift */,
 				E3F5964C25F7D4A800086BF3 /* EditProfileHeader.swift */,
+				E3F5965225F7E34E00086BF3 /* EditProfileCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -397,6 +403,7 @@
 				E3C6028B25D1860E00A821E3 /* ProfileController.swift in Sources */,
 				E364CC9D25DFF0F600F940A2 /* UploadTweetViewModel.swift in Sources */,
 				E3C6028E25D2B73B00A821E3 /* ProfileHeader.swift in Sources */,
+				E3F5965325F7E34E00086BF3 /* EditProfileCell.swift in Sources */,
 				E3A73EE225CC4923009687E4 /* TweetCell.swift in Sources */,
 				E3D8B15A25BEC50600642412 /* LoginController.swift in Sources */,
 				E3174E1025E7FDE7008C9608 /* Notification.swift in Sources */,
@@ -413,6 +420,7 @@
 				E3A73EE525CD843D009687E4 /* TweetViewModel.swift in Sources */,
 				E3A3D58425E4E4AC00E91A6A /* ActionSheetViewModel.swift in Sources */,
 				E3174E1625E8CC82008C9608 /* NotificationCell.swift in Sources */,
+				E3F5965025F7E25D00086BF3 /* EditProfileViewModel.swift in Sources */,
 				E3D8B15E25BECD3500642412 /* RegistrationController.swift in Sources */,
 				E3D8B14625B886E600642412 /* FeedController.swift in Sources */,
 				E3C6029125D2EEBC00A821E3 /* ProfileFilterView.swift in Sources */,
