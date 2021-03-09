@@ -49,6 +49,7 @@
 		E3ED48BC25C8101F005C4F9D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48BB25C8101F005C4F9D /* AuthService.swift */; };
 		E3ED48D125C87514005C4F9D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48D025C87514005C4F9D /* UserService.swift */; };
 		E3ED48D425C9945C005C4F9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED48D325C9945C005C4F9D /* User.swift */; };
+		E3F5964925F7CAA100086BF3 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5964825F7CAA100086BF3 /* EditProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		E3ED48BB25C8101F005C4F9D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E3ED48D025C87514005C4F9D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		E3ED48D325C9945C005C4F9D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E3F5964825F7CAA100086BF3 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				E3D8B15825BEC46C00642412 /* Authentication */,
 				E3D8B14225B6E95100642412 /* MainTabController.swift */,
 				E3D8B14525B886E600642412 /* FeedController.swift */,
+				E3F5964825F7CAA100086BF3 /* EditProfileController.swift */,
 				E3D8B14825B8896600642412 /* ExploreController.swift */,
 				E3D8B14B25B889BA00642412 /* NotificationsController.swift */,
 				E3D8B14E25B88A0200642412 /* ConversationsController.swift */,
@@ -374,6 +377,7 @@
 				E3D8B14F25B88A0200642412 /* ConversationsController.swift in Sources */,
 				E364CC9025D6DA5A00F940A2 /* UserCell.swift in Sources */,
 				E395230025C00A7B009176C4 /* Utilities.swift in Sources */,
+				E3F5964925F7CAA100086BF3 /* EditProfileController.swift in Sources */,
 				E3A3D57D25E4DB9300E91A6A /* ActionSheetCell.swift in Sources */,
 				E3D8B12225B609D600642412 /* AppDelegate.swift in Sources */,
 				E3174E1925E8F447008C9608 /* NotificationViewModel.swift in Sources */,
