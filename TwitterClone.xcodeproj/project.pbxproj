@@ -12,6 +12,7 @@
 		E3174E1325E8150A008C9608 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3174E1225E8150A008C9608 /* NotificationService.swift */; };
 		E3174E1625E8CC82008C9608 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3174E1525E8CC82008C9608 /* NotificationCell.swift */; };
 		E3174E1925E8F447008C9608 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3174E1825E8F447008C9608 /* NotificationViewModel.swift */; };
+		E3602B4A25F92CC300634D9E /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3602B4925F92CC200634D9E /* InputTextView.swift */; };
 		E364CC9025D6DA5A00F940A2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E364CC8F25D6DA5A00F940A2 /* UserCell.swift */; };
 		E364CC9725DBD94400F940A2 /* TweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E364CC9625DBD94400F940A2 /* TweetController.swift */; };
 		E364CC9A25DCF99200F940A2 /* TweetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E364CC9925DCF99200F940A2 /* TweetHeader.swift */; };
@@ -63,6 +64,7 @@
 		E3174E1225E8150A008C9608 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		E3174E1525E8CC82008C9608 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		E3174E1825E8F447008C9608 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		E3602B4925F92CC200634D9E /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		E364CC8F25D6DA5A00F940A2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		E364CC9625DBD94400F940A2 /* TweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetController.swift; sourceTree = "<group>"; };
 		E364CC9925DCF99200F940A2 /* TweetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetHeader.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				E364CC9925DCF99200F940A2 /* TweetHeader.swift */,
 				E3A3D57C25E4DB9300E91A6A /* ActionSheetCell.swift */,
 				E3174E1525E8CC82008C9608 /* NotificationCell.swift */,
+				E3602B4925F92CC200634D9E /* InputTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3602B4A25F92CC300634D9E /* InputTextView.swift in Sources */,
 				E3ED48D125C87514005C4F9D /* UserService.swift in Sources */,
 				E3D8B14C25B889BA00642412 /* NotificationsController.swift in Sources */,
 				E3A73ED525CAFE53009687E4 /* CaptionTextView.swift in Sources */,
