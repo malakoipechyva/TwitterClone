@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol EditProfileControllerDelegate: class {
+    func controller(_ controller: EditProfileController, wantsToUpdate user: User)
+}
+
 private let reuseIdentifier = "EditProfileCell"
 
 class EditProfileController: UITableViewController {
@@ -16,6 +20,9 @@ class EditProfileController: UITableViewController {
     private var user: User
     private lazy var headerView = EditProfileHeader(user: user)
     private let imagePicker = UIImagePickerController()
+    private var userInfoChanged = false
+    weak var delegate: EditProfileControllerDelegate?
+    
     private var selectedImage: UIImage? {
         didSet {
             headerView.profileImageView.image = selectedImage
@@ -47,10 +54,16 @@ class EditProfileController: UITableViewController {
     }
     
     @objc func handleDone() {
-        dismiss(animated: true, completion: nil)
+        updateUserData()
     }
     
     //MARK: - API
+    
+    func updateUserData() {
+        UserService.shared.saveUserData(user: user) { (err, ref) in
+            self.delegate?.controller(self, wantsToUpdate: self.user)
+        }
+    }
     
     //MARK: - Helpers
     
@@ -84,7 +97,7 @@ class EditProfileController: UITableViewController {
     }
 }
 
-//MARK: - TableViewSource / TableViewDelegate
+//MARK: - UITableViewDataSource
 
 extension EditProfileController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -102,6 +115,8 @@ extension EditProfileController {
         
     }
 }
+
+//MARK: - UITableViewDelegate
 
 extension EditProfileController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -135,6 +150,8 @@ extension EditProfileController: UIImagePickerControllerDelegate, UINavigationCo
 extension EditProfileController: EditProfileCellDelegate {
     func updateUserInfo(_ cell: EditProfileCell) {
         guard let viewModel = cell.viewModel else { return }
+        userInfoChanged = true
+        navigationItem.rightBarButtonItem?.isEnabled = true
         
         switch viewModel.option {
         case .fullname:
