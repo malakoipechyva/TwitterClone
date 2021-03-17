@@ -34,12 +34,8 @@ class MainTabController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         view.backgroundColor = .systemBlue
-        
-//        logUserOut()
         authenticateUserAndConfigureUI()
-        
     }
     
     //MARK: - API
@@ -64,16 +60,7 @@ class MainTabController: UITabBarController {
             fetchUser()
         }
     }
-    
-    func logUserOut() {
-        do {
-            try Auth.auth().signOut()
-        } catch {
-            print("DEBUG: Failde to sign out with error: \(error.localizedDescription)")
-        }
-    }
-    
-    
+
     //MARK: - Selectors
     
     @objc func actionButtonTapped() {
