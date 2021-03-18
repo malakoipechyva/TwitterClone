@@ -81,7 +81,7 @@ class SearchController: UITableViewController {
     
     func configureUI() {
         view.backgroundColor = .white
-        navigationItem.title = "Explore"
+        navigationItem.title = config == .messages ? "New Message" : "Explore"
         
         tableView.register(UserCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.rowHeight = 60
