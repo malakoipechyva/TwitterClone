@@ -120,7 +120,6 @@ class RegistrationController: UIViewController {
             tab.authenticateUserAndConfigureUI()
             
             self.dismiss(animated: true, completion: nil)
-            
         }
     }
     
